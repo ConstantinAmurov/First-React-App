@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+}
+article {
+}
+section {
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.booklist {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.book {
+  padding: 1rem;
+  background: white;
+  border-radius: 2rem;
+}
+.book img {
+  height: 250px;
+}
+.book h4 {
+  color: gray;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} ;
